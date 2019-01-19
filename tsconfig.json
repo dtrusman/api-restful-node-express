@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "resolveJsonModule": true,
+    "lib": [
+      "es2015",
+      "es2015.iterable",
+      "dom",
+      "es6"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "express",
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@server/*": [
+        "src/*"
+      ],
+      "*": [
+        "node_modules/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "test-especs",
+    "src/lib",
+    "OLD"
+  ]
+}
